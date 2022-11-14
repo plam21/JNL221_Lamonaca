@@ -12,28 +12,148 @@ or displaying student work. -->
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="/index.css" />
 </head>
+<!-- Complete this worksheet in html and css. Instructions are as comments; you may use reference_sheet.html and the internet to jog your memory on html tags and css. -->
 
-<!-- DO NOT EDIT ANYTHING IN THE HEAD TAG ^ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+        <style>
+        
+        p {
+            color: #565656;
+            font-size: 16px;
+            font-family: 'Open Sans', serif;
+            width: 50%;
+        }
+        #quote {
+            color: magenta;
+            font-style: italic;
+            border: solid lightskyblue 2px;
+        }
 
-<body>
-	
-	<!-- Intro row -->
-	<div id="intro" class="col-sm-12">
-		<h1> <!-- /// EDITABLE ONE /// --> JNL221, Spring 2022, 12:30p</h1>
-		<h4> <!-- /// EDITABLE TWO /// --> Paul Lamonaca</h4>
-	</div>
+        #book {
+            border: black 2px;
+        }
 
-	<div class="container content">
-		<p> <!-- /// EDITABLE THREE /// --> I am from New York and like watching the Giants</p>
-	</div>
+        #bargraph {
+            border: 1px solid gray;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            width: 25%;
+        }
+        .bar_label {
+            color: red;
+        }
+        #longest {
+            width: 300px;
+            height: 10px;
+            background: forestgreen;
+            border: 1px solid red;
+        }
+        #longer {
+            width: 200px;
+            height: 10px;
+            background: navy;
+            border: 1px solid red;
+        }
+        #long {
+            width: 100px;
+            height: 10px;
+            background: orangered;
+            border: 1px solid red;
+        }
+
+        </style>
+    </head>
+    
+    <body>
+
+    <h1>A little bit about me!</h1>
+    
+    <h2>My intro</h2>
+     <p> <i> <strong> My Name is Paul Lamonaca, I am from Westchester, NY. My favorite thing I like to do when I have free time is play lacrosse and hangout with my friends. I have two older brothers named Donald and Robert </strong> </i> </p>                                
+    
+
+    <h2>My handles</h2>
+    <p> Instagram: <a href="https://www.instagram.com/paul.lamonaca21/">@Paul.Lamonaca21</a> </p>
+    <p>Twitter: <a href="https://twitter.com/paul_lamonaca/">@Paul_Lamonaca</a> </p>
+
+    
+    <h2> ~ Challenge: Why is my text maroon? ~</h2>
+    <!-- Challenge! The text in your p tags is currently maroon. Figure out why and make it dark gray, using a hex code. (Hint: use google to find a hex code for a dark gray) -->
+    <p>My text is now Dark Grey.</p>
 
 
-  	<!-- About Row -->
-	<div class="row">
-		<div id="end" class="col-sm-12">
-			<h4> <!-- /// EDITABLE FOUR /// --> made by github pages with montserrat and open sans, at newhouse school of communications.</h4>
-		</div>
-	</div>
+    <h2>My favorite meme</h2>
+    </p> <img src="large_wink.png" alt="an social media meme of lady winking" height="300px" width="400px">
 
-</body>
+
+    <!-- Include: "large_wink.png" as an image -->
+    <!-- Tags to use: <img> -->
+    <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
+
+    
+    <h2>Why I'm a great student</h2>
+    <strong>
+        <ul>
+            <li>Hardworking</li>
+            <li>dilligent</li>
+            <li>On time to class</li>
+            <li>meet with my professor</li>
+        </ul> </strong> 
+
+    
+    <h2>Top 3 most famous people from my hometown</h2>
+   <ol>
+            <li><a href="https://en.wikipedia.org/wiki/Aaron_Sorkin">Aaron Sorkin</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Martha_Stewart">Martha Stewart</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/James_Fenimore_Cooper">James Fenimore Cooper</a></li>
+   </ol>
+
+
+    <h2> ~ Challenge: Read my poetry ~</h2>
+<p>College is very exciting and fun<br>
+   The workload can be stressful and taxing for some<br>
+   Always having a smile on my face<br>
+   Everyday brings something great</p>
+
+    <h2>This is one of my favorite quotes</h2>
+
+<h3>The Hard Hat-Jon Gordon</h3>
+<div 
+  id="quote"> <p>"Treat everyone with respect and expect everyone to do the same"</p>
+</div>
+    
+    <h2>These are more of my favorite books</h2>
+
+    <div 
+      id="book"> 
+            <ul> 
+            <li>The Hard Hat</li>
+            <li>Lord of the Rings</li>
+            <li>Lone Survivor</li>
+            <li>The Captain</li> 
+        </ul> </p> </div>
+
+
+    <h3>~ Challenge: A very simple bar graph ~</h3>
+    <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
+
+    <div id="bargraph">
+        <h4>How Long it Takes each Brother to eat a Pint of Ice Cream</h4>
+        <p class="bar_label">Paul<br>30 Minutes</p>
+        <div id="longest"></div>
+        <p class="bar_label">Donald<br>20 Minutes</p>
+        <div id="longer"></div>
+        <p class="bar_label">Robert<br>10 Minutes</p>
+        <div id="long"></div>
+    </div>
+     
+    </body>
 </html>
+
+
